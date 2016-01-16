@@ -1,0 +1,26 @@
+//
+//  SmartTvListing.pch
+//  SmartTvListing
+//
+//  Created by Muzammil Peer on 1/16/16.
+//  Copyright © 2016 Muzammil Peer. All rights reserved.
+//
+
+#ifndef SmartTvListing_pch
+#define SmartTvListing_pch
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "BaseViewController.h"
+#import "NSNavigationController.h"
+#import "BaseWindowController.h"
+
+//macros
+#import "MacrosHeader.h"
+
+//utils
+#import "StoryBoardUtil.h"
+
+
+#endif /* SmartTvListing_pch */

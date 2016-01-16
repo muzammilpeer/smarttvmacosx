@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F234B371C49F78A0086C471 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F234B361C49F78A0086C471 /* AppDelegate.m */; };
+		7F234B391C49F78A0086C471 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F234B381C49F78A0086C471 /* main.m */; };
+		7F234B3C1C49F78A0086C471 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F234B3B1C49F78A0086C471 /* ViewController.m */; };
+		7F234B3F1C49F78A0086C471 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F234B3E1C49F78A0086C471 /* Document.m */; };
+		7F234B421C49F78A0086C471 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F234B401C49F78A0086C471 /* Document.xcdatamodeld */; };
+		7F234B441C49F78A0086C471 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F234B431C49F78A0086C471 /* Images.xcassets */; };
+		7F234B471C49F78A0086C471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F234B451C49F78A0086C471 /* Main.storyboard */; };
+		7F234B531C49F78A0086C471 /* SmartTvListingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F234B521C49F78A0086C471 /* SmartTvListingTests.m */; };
+		7F6DDE6F1C4A27BA007CFB57 /* LiveChannelsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE6E1C4A27BA007CFB57 /* LiveChannelsListViewController.m */; };
+		7F6DDE701C4A27BA007CFB57 /* LiveChannelsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE6E1C4A27BA007CFB57 /* LiveChannelsListViewController.m */; };
+		7F6DDE741C4A27CC007CFB57 /* VODListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE721C4A27CC007CFB57 /* VODListViewController.m */; };
+		7F6DDE751C4A27CC007CFB57 /* VODListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE721C4A27CC007CFB57 /* VODListViewController.m */; };
+		7F6DDE7B1C4A27DA007CFB57 /* EducationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE791C4A27DA007CFB57 /* EducationListViewController.m */; };
+		7F6DDE7C1C4A27DA007CFB57 /* EducationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE791C4A27DA007CFB57 /* EducationListViewController.m */; };
+		7F6DDE821C4A27EC007CFB57 /* MyFavouritesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE801C4A27EC007CFB57 /* MyFavouritesListViewController.m */; };
+		7F6DDE831C4A27EC007CFB57 /* MyFavouritesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE801C4A27EC007CFB57 /* MyFavouritesListViewController.m */; };
+		7F6DDE881C4A281C007CFB57 /* MyRecordedShowsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE871C4A281C007CFB57 /* MyRecordedShowsListViewController.m */; };
+		7F6DDE891C4A281C007CFB57 /* MyRecordedShowsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE871C4A281C007CFB57 /* MyRecordedShowsListViewController.m */; };
+		7F95A0791C4A062D0027F3E8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F95A0781C4A062D0027F3E8 /* AVKit.framework */; };
+		7F95A08A1C4A097B0027F3E8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F95A0891C4A097B0027F3E8 /* LoginViewController.m */; };
+		7F95A08B1C4A097B0027F3E8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F95A0891C4A097B0027F3E8 /* LoginViewController.m */; };
+		7FB956671C4AA9E200BC6EAC /* BaseWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB956661C4AA9E200BC6EAC /* BaseWindowController.m */; };
+		7FB956681C4AA9E200BC6EAC /* BaseWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB956661C4AA9E200BC6EAC /* BaseWindowController.m */; };
+		7FB9566B1C4AA9F700BC6EAC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9566A1C4AA9F700BC6EAC /* BaseViewController.m */; };
+		7FB9566C1C4AA9F700BC6EAC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9566A1C4AA9F700BC6EAC /* BaseViewController.m */; };
+		7FB9566F1C4AAA2100BC6EAC /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9566E1C4AAA2100BC6EAC /* MainWindowController.m */; };
+		7FB956701C4AAA2100BC6EAC /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB9566E1C4AAA2100BC6EAC /* MainWindowController.m */; };
+		7FB956A41C4AB1F000BC6EAC /* NSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB956A31C4AB1F000BC6EAC /* NSNavigationController.m */; };
+		7FB956A51C4AB1F000BC6EAC /* NSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB956A31C4AB1F000BC6EAC /* NSNavigationController.m */; };
+		7FB956AC1C4ABF5800BC6EAC /* StoryBoardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB956AB1C4ABF5800BC6EAC /* StoryBoardUtil.m */; };
+		7FB956AD1C4ABF5800BC6EAC /* StoryBoardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB956AB1C4ABF5800BC6EAC /* StoryBoardUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F234B4D1C49F78A0086C471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F234B281C49F78A0086C471 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F234B2F1C49F78A0086C471;
+			remoteInfo = SmartTvListing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F234B301C49F78A0086C471 /* SmartTvListing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTvListing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F234B341C49F78A0086C471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F234B351C49F78A0086C471 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F234B361C49F78A0086C471 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F234B381C49F78A0086C471 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F234B3A1C49F78A0086C471 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7F234B3B1C49F78A0086C471 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7F234B3D1C49F78A0086C471 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		7F234B3E1C49F78A0086C471 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		7F234B411C49F78A0086C471 /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		7F234B431C49F78A0086C471 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7F234B461C49F78A0086C471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F234B4C1C49F78A0086C471 /* SmartTvListingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTvListingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F234B511C49F78A0086C471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F234B521C49F78A0086C471 /* SmartTvListingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartTvListingTests.m; sourceTree = "<group>"; };
+		7F6DDE6D1C4A27BA007CFB57 /* LiveChannelsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveChannelsListViewController.h; sourceTree = "<group>"; };
+		7F6DDE6E1C4A27BA007CFB57 /* LiveChannelsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveChannelsListViewController.m; sourceTree = "<group>"; };
+		7F6DDE711C4A27CC007CFB57 /* VODListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VODListViewController.h; sourceTree = "<group>"; };
+		7F6DDE721C4A27CC007CFB57 /* VODListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VODListViewController.m; sourceTree = "<group>"; };
+		7F6DDE781C4A27DA007CFB57 /* EducationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationListViewController.h; sourceTree = "<group>"; };
+		7F6DDE791C4A27DA007CFB57 /* EducationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducationListViewController.m; sourceTree = "<group>"; };
+		7F6DDE7F1C4A27EC007CFB57 /* MyFavouritesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavouritesListViewController.h; sourceTree = "<group>"; };
+		7F6DDE801C4A27EC007CFB57 /* MyFavouritesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavouritesListViewController.m; sourceTree = "<group>"; };
+		7F6DDE861C4A281C007CFB57 /* MyRecordedShowsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRecordedShowsListViewController.h; sourceTree = "<group>"; };
+		7F6DDE871C4A281C007CFB57 /* MyRecordedShowsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRecordedShowsListViewController.m; sourceTree = "<group>"; };
+		7F95A0781C4A062D0027F3E8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		7F95A0881C4A097B0027F3E8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7F95A0891C4A097B0027F3E8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7FB956651C4AA9E200BC6EAC /* BaseWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWindowController.h; sourceTree = "<group>"; };
+		7FB956661C4AA9E200BC6EAC /* BaseWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWindowController.m; sourceTree = "<group>"; };
+		7FB956691C4AA9F700BC6EAC /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		7FB9566A1C4AA9F700BC6EAC /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		7FB9566D1C4AAA2100BC6EAC /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		7FB9566E1C4AAA2100BC6EAC /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		7FB956A21C4AB1F000BC6EAC /* NSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNavigationController.h; sourceTree = "<group>"; };
+		7FB956A31C4AB1F000BC6EAC /* NSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNavigationController.m; sourceTree = "<group>"; };
+		7FB956A61C4AB61600BC6EAC /* SmartTvListing-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SmartTvListing-Prefix.pch"; sourceTree = "<group>"; };
+		7FB956A81C4ABEFC00BC6EAC /* MacrosHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacrosHeader.h; sourceTree = "<group>"; };
+		7FB956AA1C4ABF5800BC6EAC /* StoryBoardUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryBoardUtil.h; sourceTree = "<group>"; };
+		7FB956AB1C4ABF5800BC6EAC /* StoryBoardUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBoardUtil.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F234B2D1C49F78A0086C471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F95A0791C4A062D0027F3E8 /* AVKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F234B491C49F78A0086C471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F05FF9F1C4AA99600A950DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FB956651C4AA9E200BC6EAC /* BaseWindowController.h */,
+				7FB956661C4AA9E200BC6EAC /* BaseWindowController.m */,
+				7FB956691C4AA9F700BC6EAC /* BaseViewController.h */,
+				7FB9566A1C4AA9F700BC6EAC /* BaseViewController.m */,
+				7FB956A21C4AB1F000BC6EAC /* NSNavigationController.h */,
+				7FB956A31C4AB1F000BC6EAC /* NSNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F234B271C49F78A0086C471 = {
+			isa = PBXGroup;
+			children = (
+				7F95A0781C4A062D0027F3E8 /* AVKit.framework */,
+				7F234B321C49F78A0086C471 /* SmartTvListing */,
+				7F234B4F1C49F78A0086C471 /* SmartTvListingTests */,
+				7F234B311C49F78A0086C471 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F234B311C49F78A0086C471 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F234B301C49F78A0086C471 /* SmartTvListing.app */,
+				7F234B4C1C49F78A0086C471 /* SmartTvListingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F234B321C49F78A0086C471 /* SmartTvListing */ = {
+			isa = PBXGroup;
+			children = (
+				7F95A07F1C4A08890027F3E8 /* AppLayer */,
+				7F95A07E1C4A08710027F3E8 /* UtilityLayer */,
+				7F95A07D1C4A085F0027F3E8 /* DatabaseLayer */,
+				7F95A07C1C4A084E0027F3E8 /* BaseLayer */,
+				7F95A07B1C4A083D0027F3E8 /* NetworkLayer */,
+				7F234B351C49F78A0086C471 /* AppDelegate.h */,
+				7F234B361C49F78A0086C471 /* AppDelegate.m */,
+				7F234B3A1C49F78A0086C471 /* ViewController.h */,
+				7F234B3B1C49F78A0086C471 /* ViewController.m */,
+				7F234B3D1C49F78A0086C471 /* Document.h */,
+				7F234B3E1C49F78A0086C471 /* Document.m */,
+				7F234B431C49F78A0086C471 /* Images.xcassets */,
+				7F234B401C49F78A0086C471 /* Document.xcdatamodeld */,
+				7F234B331C49F78A0086C471 /* Supporting Files */,
+				7FB956A61C4AB61600BC6EAC /* SmartTvListing-Prefix.pch */,
+			);
+			path = SmartTvListing;
+			sourceTree = "<group>";
+		};
+		7F234B331C49F78A0086C471 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F234B341C49F78A0086C471 /* Info.plist */,
+				7F234B381C49F78A0086C471 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F234B4F1C49F78A0086C471 /* SmartTvListingTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F234B521C49F78A0086C471 /* SmartTvListingTests.m */,
+				7F234B501C49F78A0086C471 /* Supporting Files */,
+			);
+			path = SmartTvListingTests;
+			sourceTree = "<group>";
+		};
+		7F234B501C49F78A0086C471 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F234B511C49F78A0086C471 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F95A07B1C4A083D0027F3E8 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		7F95A07C1C4A084E0027F3E8 /* BaseLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7FB956A71C4ABEE100BC6EAC /* Headers */,
+				7F05FF9F1C4AA99600A950DA /* Controller */,
+			);
+			path = BaseLayer;
+			sourceTree = "<group>";
+		};
+		7F95A07D1C4A085F0027F3E8 /* DatabaseLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DatabaseLayer;
+			sourceTree = "<group>";
+		};
+		7F95A07E1C4A08710027F3E8 /* UtilityLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7FB956A91C4ABF4200BC6EAC /* Storyboard */,
+			);
+			path = UtilityLayer;
+			sourceTree = "<group>";
+		};
+		7F95A07F1C4A08890027F3E8 /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7F95A0801C4A08B90027F3E8 /* Controller */,
+				7F95A0811C4A08B90027F3E8 /* View */,
+			);
+			path = AppLayer;
+			sourceTree = "<group>";
+		};
+		7F95A0801C4A08B90027F3E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7F95A0871C4A09610027F3E8 /* MyRecordedShows */,
+				7F95A0861C4A09550027F3E8 /* MyFavourites */,
+				7F95A0851C4A09410027F3E8 /* Education */,
+				7F95A0841C4A09360027F3E8 /* VideoOnDemand */,
+				7F95A0831C4A09290027F3E8 /* LiveChannels */,
+				7F95A0821C4A091A0027F3E8 /* Login */,
+				7FB9566D1C4AAA2100BC6EAC /* MainWindowController.h */,
+				7FB9566E1C4AAA2100BC6EAC /* MainWindowController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F95A0811C4A08B90027F3E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F234B451C49F78A0086C471 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F95A0821C4A091A0027F3E8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7F95A0881C4A097B0027F3E8 /* LoginViewController.h */,
+				7F95A0891C4A097B0027F3E8 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7F95A0831C4A09290027F3E8 /* LiveChannels */ = {
+			isa = PBXGroup;
+			children = (
+				7F6DDE6D1C4A27BA007CFB57 /* LiveChannelsListViewController.h */,
+				7F6DDE6E1C4A27BA007CFB57 /* LiveChannelsListViewController.m */,
+			);
+			path = LiveChannels;
+			sourceTree = "<group>";
+		};
+		7F95A0841C4A09360027F3E8 /* VideoOnDemand */ = {
+			isa = PBXGroup;
+			children = (
+				7F6DDE711C4A27CC007CFB57 /* VODListViewController.h */,
+				7F6DDE721C4A27CC007CFB57 /* VODListViewController.m */,
+			);
+			path = VideoOnDemand;
+			sourceTree = "<group>";
+		};
+		7F95A0851C4A09410027F3E8 /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				7F6DDE781C4A27DA007CFB57 /* EducationListViewController.h */,
+				7F6DDE791C4A27DA007CFB57 /* EducationListViewController.m */,
+			);
+			path = Education;
+			sourceTree = "<group>";
+		};
+		7F95A0861C4A09550027F3E8 /* MyFavourites */ = {
+			isa = PBXGroup;
+			children = (
+				7F6DDE7F1C4A27EC007CFB57 /* MyFavouritesListViewController.h */,
+				7F6DDE801C4A27EC007CFB57 /* MyFavouritesListViewController.m */,
+			);
+			path = MyFavourites;
+			sourceTree = "<group>";
+		};
+		7F95A0871C4A09610027F3E8 /* MyRecordedShows */ = {
+			isa = PBXGroup;
+			children = (
+				7F6DDE861C4A281C007CFB57 /* MyRecordedShowsListViewController.h */,
+				7F6DDE871C4A281C007CFB57 /* MyRecordedShowsListViewController.m */,
+			);
+			path = MyRecordedShows;
+			sourceTree = "<group>";
+		};
+		7FB956A71C4ABEE100BC6EAC /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				7FB956A81C4ABEFC00BC6EAC /* MacrosHeader.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		7FB956A91C4ABF4200BC6EAC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7FB956AA1C4ABF5800BC6EAC /* StoryBoardUtil.h */,
+				7FB956AB1C4ABF5800BC6EAC /* StoryBoardUtil.m */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F234B2F1C49F78A0086C471 /* SmartTvListing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F234B561C49F78A0086C471 /* Build configuration list for PBXNativeTarget "SmartTvListing" */;
+			buildPhases = (
+				7F234B2C1C49F78A0086C471 /* Sources */,
+				7F234B2D1C49F78A0086C471 /* Frameworks */,
+				7F234B2E1C49F78A0086C471 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartTvListing;
+			productName = SmartTvListing;
+			productReference = 7F234B301C49F78A0086C471 /* SmartTvListing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F234B4B1C49F78A0086C471 /* SmartTvListingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F234B591C49F78A0086C471 /* Build configuration list for PBXNativeTarget "SmartTvListingTests" */;
+			buildPhases = (
+				7F234B481C49F78A0086C471 /* Sources */,
+				7F234B491C49F78A0086C471 /* Frameworks */,
+				7F234B4A1C49F78A0086C471 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F234B4E1C49F78A0086C471 /* PBXTargetDependency */,
+			);
+			name = SmartTvListingTests;
+			productName = SmartTvListingTests;
+			productReference = 7F234B4C1C49F78A0086C471 /* SmartTvListingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F234B281C49F78A0086C471 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Muzammil Peer";
+				TargetAttributes = {
+					7F234B2F1C49F78A0086C471 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					7F234B4B1C49F78A0086C471 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 7F234B2F1C49F78A0086C471;
+					};
+				};
+			};
+			buildConfigurationList = 7F234B2B1C49F78A0086C471 /* Build configuration list for PBXProject "SmartTvListing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F234B271C49F78A0086C471;
+			productRefGroup = 7F234B311C49F78A0086C471 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F234B2F1C49F78A0086C471 /* SmartTvListing */,
+				7F234B4B1C49F78A0086C471 /* SmartTvListingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F234B2E1C49F78A0086C471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F234B441C49F78A0086C471 /* Images.xcassets in Resources */,
+				7F234B471C49F78A0086C471 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F234B4A1C49F78A0086C471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F234B2C1C49F78A0086C471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F234B3F1C49F78A0086C471 /* Document.m in Sources */,
+				7F234B3C1C49F78A0086C471 /* ViewController.m in Sources */,
+				7FB956AC1C4ABF5800BC6EAC /* StoryBoardUtil.m in Sources */,
+				7F95A08A1C4A097B0027F3E8 /* LoginViewController.m in Sources */,
+				7F234B391C49F78A0086C471 /* main.m in Sources */,
+				7F234B421C49F78A0086C471 /* Document.xcdatamodeld in Sources */,
+				7F6DDE7B1C4A27DA007CFB57 /* EducationListViewController.m in Sources */,
+				7F6DDE821C4A27EC007CFB57 /* MyFavouritesListViewController.m in Sources */,
+				7F6DDE6F1C4A27BA007CFB57 /* LiveChannelsListViewController.m in Sources */,
+				7FB956671C4AA9E200BC6EAC /* BaseWindowController.m in Sources */,
+				7FB956A41C4AB1F000BC6EAC /* NSNavigationController.m in Sources */,
+				7FB9566B1C4AA9F700BC6EAC /* BaseViewController.m in Sources */,
+				7FB9566F1C4AAA2100BC6EAC /* MainWindowController.m in Sources */,
+				7F6DDE881C4A281C007CFB57 /* MyRecordedShowsListViewController.m in Sources */,
+				7F6DDE741C4A27CC007CFB57 /* VODListViewController.m in Sources */,
+				7F234B371C49F78A0086C471 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F234B481C49F78A0086C471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB956701C4AAA2100BC6EAC /* MainWindowController.m in Sources */,
+				7FB956681C4AA9E200BC6EAC /* BaseWindowController.m in Sources */,
+				7FB9566C1C4AA9F700BC6EAC /* BaseViewController.m in Sources */,
+				7FB956A51C4AB1F000BC6EAC /* NSNavigationController.m in Sources */,
+				7F95A08B1C4A097B0027F3E8 /* LoginViewController.m in Sources */,
+				7F234B531C49F78A0086C471 /* SmartTvListingTests.m in Sources */,
+				7F6DDE751C4A27CC007CFB57 /* VODListViewController.m in Sources */,
+				7F6DDE7C1C4A27DA007CFB57 /* EducationListViewController.m in Sources */,
+				7F6DDE831C4A27EC007CFB57 /* MyFavouritesListViewController.m in Sources */,
+				7F6DDE891C4A281C007CFB57 /* MyRecordedShowsListViewController.m in Sources */,
+				7FB956AD1C4ABF5800BC6EAC /* StoryBoardUtil.m in Sources */,
+				7F6DDE701C4A27BA007CFB57 /* LiveChannelsListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F234B4E1C49F78A0086C471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F234B2F1C49F78A0086C471 /* SmartTvListing */;
+			targetProxy = 7F234B4D1C49F78A0086C471 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F234B451C49F78A0086C471 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F234B461C49F78A0086C471 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F234B541C49F78A0086C471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7F234B551C49F78A0086C471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7F234B571C49F78A0086C471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				INFOPLIST_FILE = SmartTvListing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muzammilpeer.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7F234B581C49F78A0086C471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Prefix.pch";
+				INFOPLIST_FILE = SmartTvListing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muzammilpeer.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7F234B5A1C49F78A0086C471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartTvListingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muzammilpeer.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartTvListing.app/Contents/MacOS/SmartTvListing";
+			};
+			name = Debug;
+		};
+		7F234B5B1C49F78A0086C471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartTvListingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muzammilpeer.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartTvListing.app/Contents/MacOS/SmartTvListing";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F234B2B1C49F78A0086C471 /* Build configuration list for PBXProject "SmartTvListing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F234B541C49F78A0086C471 /* Debug */,
+				7F234B551C49F78A0086C471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F234B561C49F78A0086C471 /* Build configuration list for PBXNativeTarget "SmartTvListing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F234B571C49F78A0086C471 /* Debug */,
+				7F234B581C49F78A0086C471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F234B591C49F78A0086C471 /* Build configuration list for PBXNativeTarget "SmartTvListingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F234B5A1C49F78A0086C471 /* Debug */,
+				7F234B5B1C49F78A0086C471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F234B401C49F78A0086C471 /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F234B411C49F78A0086C471 /* Document.xcdatamodel */,
+			);
+			currentVersion = 7F234B411C49F78A0086C471 /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F234B281C49F78A0086C471 /* Project object */;
+}
