@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ResponseProtocol.h"
 
 @class NSNavigationController;
 
-@interface BaseViewController : NSViewController
+@interface BaseViewController : NSViewController<ResponseProtocol>
 
 @property (nonatomic, weak) NSNavigationController *navigationController;
 
