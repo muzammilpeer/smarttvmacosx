@@ -20,6 +20,8 @@
 - (NSView*)view;
 
 - (void)pushViewController:(BaseViewController *)viewController animated:(BOOL)animated;
+- (BaseViewController *)popToRootViewControllerAnimated:(BOOL)animated;
+
 - (BaseViewController *)popViewControllerAnimated:(BOOL)animated;
 
 @end

@@ -21,10 +21,10 @@
 
 _FL_MAKE_SINGLETON(NetworkManager);
 
-- (void) executeRequest:(BaseNetworkRequest *)request withDelegate:(id<ResponseProtocol>)delegate requestType:(NSInteger)requestType {
+- (void) executeRequest:(BaseNetworkRequest *)request withDelegate:(id<ResponseProtocol>)delegate {
     
     if (nil == request) {
-        [self respondto:delegate WithError:nil requestType:request.requestType];
+        [self respondto:delegate WithError:nil requestType:[request getRequestType]];
     }
     
 //    if (![AFNetworkReachabilityManager sharedManager].reachable) {
@@ -33,7 +33,7 @@ _FL_MAKE_SINGLETON(NetworkManager);
 //    }
     
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+//        NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
     }];
     
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
@@ -51,10 +51,10 @@ _FL_MAKE_SINGLETON(NetworkManager);
         [manager POST:[request  url] parameters:[request postData] progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            [self respondto:delegate WithData:responseObject requestType:requestType];
+            [self respondto:delegate WithData:responseObject requestType:[request getRequestType]];
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            [self respondto:delegate WithError:error requestType:requestType];
+            [self respondto:delegate WithError:error requestType:[request getRequestType]];
             
         }];
     }
@@ -65,10 +65,10 @@ _FL_MAKE_SINGLETON(NetworkManager);
         [manager GET:[request  url] parameters:[request postData] progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            [self respondto:delegate WithData:responseObject requestType:requestType];
+            [self respondto:delegate WithData:responseObject requestType:[request getRequestType]];
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            [self respondto:delegate WithError:error requestType:requestType];
+            [self respondto:delegate WithError:error requestType:[request getRequestType]];
             
         }];
 

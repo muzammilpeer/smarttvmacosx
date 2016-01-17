@@ -45,6 +45,16 @@
     }
 }
 
+- (BaseViewController *)popToRootViewControllerAnimated:(BOOL)animated
+{
+    BaseViewController *topViewController = [self.viewControllerStack objectAtIndex:[self.viewControllerStack count] - 1];
+    [self removeTopView];
+    [self.viewControllerStack removeLastObject];
+    [self addTopView];
+    
+    return topViewController;
+}
+
 - (BaseViewController *)popViewControllerAnimated:(BOOL)animated
 {
     BaseViewController *topViewController = [self.viewControllerStack objectAtIndex:[self.viewControllerStack count] - 1];

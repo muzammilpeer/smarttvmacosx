@@ -8,7 +8,40 @@
 
 #import "BaseNetworkRequest.h"
 
+@interface BaseNetworkRequest ()
+{
+    
+}
+
+
+@property (nonatomic) NSInteger requestType;
+@property (nonatomic, strong) id localData;
+@end
+
 @implementation BaseNetworkRequest
+
+//public constructor
+- (instancetype)initWithModel: (id) model withRequestType:(NSInteger) requestType
+{
+    self = [super init];
+    if (self)
+    {
+        self.localData = model;
+        self.requestType = requestType;
+    }
+    return self;
+}
+
+//public getters
+- (NSInteger) getRequestType
+{
+    return self.requestType;
+}
+
+- (id) getLocalData
+{
+    return self.localData;
+}
 
 - (NSString *) url {
     @throw [NSException exceptionWithName:NSInternalInconsistencyException

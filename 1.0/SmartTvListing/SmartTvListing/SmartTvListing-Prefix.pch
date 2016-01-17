@@ -12,17 +12,32 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//#import "AppDelegate.h"
+
 #import "BaseViewController.h"
-#import "NSNavigationController.h"
 #import "BaseWindowController.h"
+#import "NSNavigationController.h"
 
 //macros
 #import "MacrosHeader.h"
 
+//enums
+#import "UsersEnums.h"
+#import "NetworkRequestEnums.h"
+
 //utils
 #import "StoryBoardUtil.h"
+#import "DefaultsManagerUtil.h"
 
 #import "AFNetworking.h"
+
+#import "BaseModel.h"
+#import "CommonRequestModel.h"
+#import "WitribeCommomRequest.h"
+#import "NetworkManager.h"
+
+//
+#import "UserManager.h"
 
 
 

@@ -15,6 +15,33 @@
 		7F234B441C49F78A0086C471 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F234B431C49F78A0086C471 /* Images.xcassets */; };
 		7F234B471C49F78A0086C471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F234B451C49F78A0086C471 /* Main.storyboard */; };
 		7F234B531C49F78A0086C471 /* SmartTvListingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F234B521C49F78A0086C471 /* SmartTvListingTests.m */; };
+		7F4874241C4B66D600DC3CEA /* WitribeCommomRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874231C4B66D600DC3CEA /* WitribeCommomRequest.m */; };
+		7F4874251C4B66D600DC3CEA /* WitribeCommomRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874231C4B66D600DC3CEA /* WitribeCommomRequest.m */; };
+		7F4874281C4B68F000DC3CEA /* CommonRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874271C4B68F000DC3CEA /* CommonRequestModel.m */; };
+		7F4874291C4B68F000DC3CEA /* CommonRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874271C4B68F000DC3CEA /* CommonRequestModel.m */; };
+		7F4874331C4B739E00DC3CEA /* ChannelsCategoryData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874301C4B739E00DC3CEA /* ChannelsCategoryData.m */; };
+		7F4874341C4B739E00DC3CEA /* ChannelsCategoryData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874301C4B739E00DC3CEA /* ChannelsCategoryData.m */; };
+		7F4874351C4B739E00DC3CEA /* ChannelsCategoryResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874321C4B739E00DC3CEA /* ChannelsCategoryResponseModel.m */; };
+		7F4874361C4B739E00DC3CEA /* ChannelsCategoryResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874321C4B739E00DC3CEA /* ChannelsCategoryResponseModel.m */; };
+		7F48743A1C4B7A9100DC3CEA /* BaseTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874391C4B7A9100DC3CEA /* BaseTableCellView.m */; };
+		7F48743B1C4B7A9100DC3CEA /* BaseTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874391C4B7A9100DC3CEA /* BaseTableCellView.m */; };
+		7F48743F1C4B7CA200DC3CEA /* LiveChannelsCategoryTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48743E1C4B7CA200DC3CEA /* LiveChannelsCategoryTableCellView.m */; };
+		7F4874401C4B7CA200DC3CEA /* LiveChannelsCategoryTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48743E1C4B7CA200DC3CEA /* LiveChannelsCategoryTableCellView.m */; };
+		7F4874431C4B8E6A00DC3CEA /* NSImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874421C4B8E6A00DC3CEA /* NSImageView+AFNetworking.m */; };
+		7F4874441C4B8E6A00DC3CEA /* NSImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874421C4B8E6A00DC3CEA /* NSImageView+AFNetworking.m */; };
+		7F48744B1C4B961E00DC3CEA /* LiveChannelsCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48744A1C4B961E00DC3CEA /* LiveChannelsCategoriesViewController.m */; };
+		7F48744C1C4B961E00DC3CEA /* LiveChannelsCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48744A1C4B961E00DC3CEA /* LiveChannelsCategoriesViewController.m */; };
+		7F4874511C4B97D200DC3CEA /* ChannelsData.h.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48744E1C4B97D200DC3CEA /* ChannelsData.h.m */; };
+		7F4874521C4B97D200DC3CEA /* ChannelsData.h.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48744E1C4B97D200DC3CEA /* ChannelsData.h.m */; };
+		7F4874531C4B97D200DC3CEA /* ChannelsResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874501C4B97D200DC3CEA /* ChannelsResponseModel.m */; };
+		7F4874541C4B97D200DC3CEA /* ChannelsResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874501C4B97D200DC3CEA /* ChannelsResponseModel.m */; };
+		7F4874581C4B9DC200DC3CEA /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874571C4B9DC200DC3CEA /* VideoPlayerViewController.m */; };
+		7F4874591C4B9DC200DC3CEA /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874571C4B9DC200DC3CEA /* VideoPlayerViewController.m */; };
+		7F48745D1C4BBF9F00DC3CEA /* DefaultsManagerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48745C1C4BBF9F00DC3CEA /* DefaultsManagerUtil.m */; };
+		7F48745E1C4BBF9F00DC3CEA /* DefaultsManagerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F48745C1C4BBF9F00DC3CEA /* DefaultsManagerUtil.m */; };
+		7F4874641C4BC61F00DC3CEA /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874631C4BC61F00DC3CEA /* UserManager.m */; };
+		7F4874651C4BC61F00DC3CEA /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874631C4BC61F00DC3CEA /* UserManager.m */; };
+		7F4874681C4BC8BB00DC3CEA /* StringsManagerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4874671C4BC8BB00DC3CEA /* StringsManagerUtil.m */; };
 		7F6DDE6F1C4A27BA007CFB57 /* LiveChannelsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE6E1C4A27BA007CFB57 /* LiveChannelsListViewController.m */; };
 		7F6DDE701C4A27BA007CFB57 /* LiveChannelsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE6E1C4A27BA007CFB57 /* LiveChannelsListViewController.m */; };
 		7F6DDE741C4A27CC007CFB57 /* VODListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DDE721C4A27CC007CFB57 /* VODListViewController.m */; };
@@ -52,8 +79,6 @@
 		7FB956D81C4AD9F400BC6EAC /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB956D01C4AD9F400BC6EAC /* LoginResponse.m */; };
 		7FB956D91C4AD9F400BC6EAC /* LoginResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB956D21C4AD9F400BC6EAC /* LoginResponseModel.m */; };
 		7FB956DA1C4AD9F400BC6EAC /* LoginResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB956D21C4AD9F400BC6EAC /* LoginResponseModel.m */; };
-		7FB956DD1C4ADAE400BC6EAC /* PostLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB956DC1C4ADAE400BC6EAC /* PostLoginRequest.m */; };
-		7FB956DE1C4ADAE400BC6EAC /* PostLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB956DC1C4ADAE400BC6EAC /* PostLoginRequest.m */; };
 		8CA7684CA4840248356A2A20 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7523BC7506A52D016057437 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +109,36 @@
 		7F234B4C1C49F78A0086C471 /* SmartTvListingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTvListingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F234B511C49F78A0086C471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F234B521C49F78A0086C471 /* SmartTvListingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartTvListingTests.m; sourceTree = "<group>"; };
+		7F4874221C4B66D600DC3CEA /* WitribeCommomRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WitribeCommomRequest.h; sourceTree = "<group>"; };
+		7F4874231C4B66D600DC3CEA /* WitribeCommomRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WitribeCommomRequest.m; sourceTree = "<group>"; };
+		7F4874261C4B68F000DC3CEA /* CommonRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonRequestModel.h; sourceTree = "<group>"; };
+		7F4874271C4B68F000DC3CEA /* CommonRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonRequestModel.m; sourceTree = "<group>"; };
+		7F48742C1C4B6EEA00DC3CEA /* NetworkRequestEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkRequestEnums.h; sourceTree = "<group>"; };
+		7F48742F1C4B739E00DC3CEA /* ChannelsCategoryData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelsCategoryData.h; sourceTree = "<group>"; };
+		7F4874301C4B739E00DC3CEA /* ChannelsCategoryData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelsCategoryData.m; sourceTree = "<group>"; };
+		7F4874311C4B739E00DC3CEA /* ChannelsCategoryResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelsCategoryResponseModel.h; sourceTree = "<group>"; };
+		7F4874321C4B739E00DC3CEA /* ChannelsCategoryResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelsCategoryResponseModel.m; sourceTree = "<group>"; };
+		7F4874381C4B7A9100DC3CEA /* BaseTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCellView.h; sourceTree = "<group>"; };
+		7F4874391C4B7A9100DC3CEA /* BaseTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableCellView.m; sourceTree = "<group>"; };
+		7F48743D1C4B7CA200DC3CEA /* LiveChannelsCategoryTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveChannelsCategoryTableCellView.h; sourceTree = "<group>"; };
+		7F48743E1C4B7CA200DC3CEA /* LiveChannelsCategoryTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveChannelsCategoryTableCellView.m; sourceTree = "<group>"; };
+		7F4874411C4B8E6A00DC3CEA /* NSImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		7F4874421C4B8E6A00DC3CEA /* NSImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		7F4874491C4B961E00DC3CEA /* LiveChannelsCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveChannelsCategoriesViewController.h; sourceTree = "<group>"; };
+		7F48744A1C4B961E00DC3CEA /* LiveChannelsCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveChannelsCategoriesViewController.m; sourceTree = "<group>"; };
+		7F48744D1C4B97D200DC3CEA /* ChannelsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelsData.h; sourceTree = "<group>"; };
+		7F48744E1C4B97D200DC3CEA /* ChannelsData.h.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelsData.h.m; sourceTree = "<group>"; };
+		7F48744F1C4B97D200DC3CEA /* ChannelsResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelsResponseModel.h; sourceTree = "<group>"; };
+		7F4874501C4B97D200DC3CEA /* ChannelsResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelsResponseModel.m; sourceTree = "<group>"; };
+		7F4874561C4B9DC200DC3CEA /* VideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
+		7F4874571C4B9DC200DC3CEA /* VideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
+		7F48745B1C4BBF9F00DC3CEA /* DefaultsManagerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultsManagerUtil.h; sourceTree = "<group>"; };
+		7F48745C1C4BBF9F00DC3CEA /* DefaultsManagerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultsManagerUtil.m; sourceTree = "<group>"; };
+		7F4874611C4BC0E500DC3CEA /* UsersEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersEnums.h; sourceTree = "<group>"; };
+		7F4874621C4BC61F00DC3CEA /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		7F4874631C4BC61F00DC3CEA /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		7F4874661C4BC8BB00DC3CEA /* StringsManagerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringsManagerUtil.h; sourceTree = "<group>"; };
+		7F4874671C4BC8BB00DC3CEA /* StringsManagerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringsManagerUtil.m; sourceTree = "<group>"; };
 		7F6DDE6D1C4A27BA007CFB57 /* LiveChannelsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveChannelsListViewController.h; sourceTree = "<group>"; };
 		7F6DDE6E1C4A27BA007CFB57 /* LiveChannelsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveChannelsListViewController.m; sourceTree = "<group>"; };
 		7F6DDE711C4A27CC007CFB57 /* VODListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VODListViewController.h; sourceTree = "<group>"; };
@@ -127,8 +182,6 @@
 		7FB956D01C4AD9F400BC6EAC /* LoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResponse.m; sourceTree = "<group>"; };
 		7FB956D11C4AD9F400BC6EAC /* LoginResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResponseModel.h; sourceTree = "<group>"; };
 		7FB956D21C4AD9F400BC6EAC /* LoginResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResponseModel.m; sourceTree = "<group>"; };
-		7FB956DB1C4ADAE400BC6EAC /* PostLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostLoginRequest.h; sourceTree = "<group>"; };
-		7FB956DC1C4ADAE400BC6EAC /* PostLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostLoginRequest.m; sourceTree = "<group>"; };
 		B7523BC7506A52D016057437 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F303D3C8A85DC35D606DE6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +296,105 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7F4874211C4B66D600DC3CEA /* Witribe */ = {
+			isa = PBXGroup;
+			children = (
+				7F4874261C4B68F000DC3CEA /* CommonRequestModel.h */,
+				7F4874271C4B68F000DC3CEA /* CommonRequestModel.m */,
+				7F4874221C4B66D600DC3CEA /* WitribeCommomRequest.h */,
+				7F4874231C4B66D600DC3CEA /* WitribeCommomRequest.m */,
+			);
+			path = Witribe;
+			sourceTree = "<group>";
+		};
+		7F48742A1C4B6EBA00DC3CEA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7F48745F1C4BC0AA00DC3CEA /* Users */,
+				7F48742B1C4B6ED300DC3CEA /* NewtorkConstants */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		7F48742B1C4B6ED300DC3CEA /* NewtorkConstants */ = {
+			isa = PBXGroup;
+			children = (
+				7F48742C1C4B6EEA00DC3CEA /* NetworkRequestEnums.h */,
+			);
+			path = NewtorkConstants;
+			sourceTree = "<group>";
+		};
+		7F48742D1C4B739E00DC3CEA /* ChannelsCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7F48742E1C4B739E00DC3CEA /* Model */,
+			);
+			path = ChannelsCategory;
+			sourceTree = "<group>";
+		};
+		7F48742E1C4B739E00DC3CEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F48744D1C4B97D200DC3CEA /* ChannelsData.h */,
+				7F48744E1C4B97D200DC3CEA /* ChannelsData.h.m */,
+				7F48744F1C4B97D200DC3CEA /* ChannelsResponseModel.h */,
+				7F4874501C4B97D200DC3CEA /* ChannelsResponseModel.m */,
+				7F48742F1C4B739E00DC3CEA /* ChannelsCategoryData.h */,
+				7F4874301C4B739E00DC3CEA /* ChannelsCategoryData.m */,
+				7F4874311C4B739E00DC3CEA /* ChannelsCategoryResponseModel.h */,
+				7F4874321C4B739E00DC3CEA /* ChannelsCategoryResponseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F4874371C4B7A7A00DC3CEA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7F4874381C4B7A9100DC3CEA /* BaseTableCellView.h */,
+				7F4874391C4B7A9100DC3CEA /* BaseTableCellView.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7F48743C1C4B7C7C00DC3CEA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7F48743D1C4B7CA200DC3CEA /* LiveChannelsCategoryTableCellView.h */,
+				7F48743E1C4B7CA200DC3CEA /* LiveChannelsCategoryTableCellView.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7F4874551C4B9DAB00DC3CEA /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7F4874561C4B9DC200DC3CEA /* VideoPlayerViewController.h */,
+				7F4874571C4B9DC200DC3CEA /* VideoPlayerViewController.m */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		7F48745A1C4BBF7D00DC3CEA /* DefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				7F48745B1C4BBF9F00DC3CEA /* DefaultsManagerUtil.h */,
+				7F48745C1C4BBF9F00DC3CEA /* DefaultsManagerUtil.m */,
+				7F4874661C4BC8BB00DC3CEA /* StringsManagerUtil.h */,
+				7F4874671C4BC8BB00DC3CEA /* StringsManagerUtil.m */,
+			);
+			path = DefaultsManager;
+			sourceTree = "<group>";
+		};
+		7F48745F1C4BC0AA00DC3CEA /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				7F4874611C4BC0E500DC3CEA /* UsersEnums.h */,
+				7F4874621C4BC61F00DC3CEA /* UserManager.h */,
+				7F4874631C4BC61F00DC3CEA /* UserManager.m */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
 		7F95A07B1C4A083D0027F3E8 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +409,7 @@
 		7F95A07C1C4A084E0027F3E8 /* BaseLayer */ = {
 			isa = PBXGroup;
 			children = (
+				7F4874371C4B7A7A00DC3CEA /* Cell */,
 				7FB956A71C4ABEE100BC6EAC /* Headers */,
 				7F05FF9F1C4AA99600A950DA /* Controller */,
 			);
@@ -273,6 +426,7 @@
 		7F95A07E1C4A08710027F3E8 /* UtilityLayer */ = {
 			isa = PBXGroup;
 			children = (
+				7F48745A1C4BBF7D00DC3CEA /* DefaultsManager */,
 				7FB956BF1C4ACE1E00BC6EAC /* ObjectGenerator */,
 				7FB956A91C4ABF4200BC6EAC /* Storyboard */,
 			);
@@ -282,6 +436,7 @@
 		7F95A07F1C4A08890027F3E8 /* AppLayer */ = {
 			isa = PBXGroup;
 			children = (
+				7F48742A1C4B6EBA00DC3CEA /* Configuration */,
 				7F95A0801C4A08B90027F3E8 /* Controller */,
 				7F95A0811C4A08B90027F3E8 /* View */,
 			);
@@ -291,6 +446,7 @@
 		7F95A0801C4A08B90027F3E8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7F4874551C4B9DAB00DC3CEA /* VideoPlayer */,
 				7F95A0871C4A09610027F3E8 /* MyRecordedShows */,
 				7F95A0861C4A09550027F3E8 /* MyFavourites */,
 				7F95A0851C4A09410027F3E8 /* Education */,
@@ -323,8 +479,11 @@
 		7F95A0831C4A09290027F3E8 /* LiveChannels */ = {
 			isa = PBXGroup;
 			children = (
+				7F48743C1C4B7C7C00DC3CEA /* Cell */,
 				7F6DDE6D1C4A27BA007CFB57 /* LiveChannelsListViewController.h */,
 				7F6DDE6E1C4A27BA007CFB57 /* LiveChannelsListViewController.m */,
+				7F4874491C4B961E00DC3CEA /* LiveChannelsCategoriesViewController.h */,
+				7F48744A1C4B961E00DC3CEA /* LiveChannelsCategoriesViewController.m */,
 			);
 			path = LiveChannels;
 			sourceTree = "<group>";
@@ -403,6 +562,8 @@
 		7FB956B71C4ACBCF00BC6EAC /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				7F48742D1C4B739E00DC3CEA /* ChannelsCategory */,
+				7F4874211C4B66D600DC3CEA /* Witribe */,
 				7FB956B81C4ACBCF00BC6EAC /* Login */,
 			);
 			path = Requests;
@@ -412,7 +573,6 @@
 			isa = PBXGroup;
 			children = (
 				7FB956B91C4ACBCF00BC6EAC /* Model */,
-				7FB956BA1C4ACBCF00BC6EAC /* Request */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -433,15 +593,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		7FB956BA1C4ACBCF00BC6EAC /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				7FB956DB1C4ADAE400BC6EAC /* PostLoginRequest.h */,
-				7FB956DC1C4ADAE400BC6EAC /* PostLoginRequest.m */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
 		7FB956BF1C4ACE1E00BC6EAC /* ObjectGenerator */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +608,8 @@
 				7FB956C31C4ACECA00BC6EAC /* BaseModel.m */,
 				7FB956C41C4ACECA00BC6EAC /* BaseNetworkRequest.h */,
 				7FB956C51C4ACECA00BC6EAC /* BaseNetworkRequest.m */,
+				7F4874411C4B8E6A00DC3CEA /* NSImageView+AFNetworking.h */,
+				7F4874421C4B8E6A00DC3CEA /* NSImageView+AFNetworking.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -623,26 +776,39 @@
 				7FB956C61C4ACECA00BC6EAC /* BaseModel.m in Sources */,
 				7F234B3F1C49F78A0086C471 /* Document.m in Sources */,
 				7FB956D51C4AD9F400BC6EAC /* LoginRequestModel.m in Sources */,
+				7F48744B1C4B961E00DC3CEA /* LiveChannelsCategoriesViewController.m in Sources */,
 				7F234B3C1C49F78A0086C471 /* ViewController.m in Sources */,
+				7F48745D1C4BBF9F00DC3CEA /* DefaultsManagerUtil.m in Sources */,
 				7FB956D71C4AD9F400BC6EAC /* LoginResponse.m in Sources */,
-				7FB956DD1C4ADAE400BC6EAC /* PostLoginRequest.m in Sources */,
 				7FB956AC1C4ABF5800BC6EAC /* StoryBoardUtil.m in Sources */,
+				7F4874511C4B97D200DC3CEA /* ChannelsData.h.m in Sources */,
+				7F4874681C4BC8BB00DC3CEA /* StringsManagerUtil.m in Sources */,
+				7F4874241C4B66D600DC3CEA /* WitribeCommomRequest.m in Sources */,
+				7F4874641C4BC61F00DC3CEA /* UserManager.m in Sources */,
 				7F95A08A1C4A097B0027F3E8 /* LoginViewController.m in Sources */,
+				7F4874531C4B97D200DC3CEA /* ChannelsResponseModel.m in Sources */,
 				7FB956D31C4AD9F400BC6EAC /* LoginData.m in Sources */,
 				7F234B391C49F78A0086C471 /* main.m in Sources */,
 				7F234B421C49F78A0086C471 /* Document.xcdatamodeld in Sources */,
+				7F4874281C4B68F000DC3CEA /* CommonRequestModel.m in Sources */,
+				7F4874581C4B9DC200DC3CEA /* VideoPlayerViewController.m in Sources */,
+				7F48743A1C4B7A9100DC3CEA /* BaseTableCellView.m in Sources */,
 				7F6DDE7B1C4A27DA007CFB57 /* EducationListViewController.m in Sources */,
 				7F6DDE821C4A27EC007CFB57 /* MyFavouritesListViewController.m in Sources */,
 				7FB956D91C4AD9F400BC6EAC /* LoginResponseModel.m in Sources */,
 				7F6DDE6F1C4A27BA007CFB57 /* LiveChannelsListViewController.m in Sources */,
 				7FB956671C4AA9E200BC6EAC /* BaseWindowController.m in Sources */,
 				7FB956A41C4AB1F000BC6EAC /* NSNavigationController.m in Sources */,
+				7F48743F1C4B7CA200DC3CEA /* LiveChannelsCategoryTableCellView.m in Sources */,
 				7FB956C81C4ACECA00BC6EAC /* BaseNetworkRequest.m in Sources */,
 				7FB9566B1C4AA9F700BC6EAC /* BaseViewController.m in Sources */,
+				7F4874351C4B739E00DC3CEA /* ChannelsCategoryResponseModel.m in Sources */,
 				7FB9566F1C4AAA2100BC6EAC /* MainWindowController.m in Sources */,
+				7F4874331C4B739E00DC3CEA /* ChannelsCategoryData.m in Sources */,
 				7F6DDE881C4A281C007CFB57 /* MyRecordedShowsListViewController.m in Sources */,
 				7F6DDE741C4A27CC007CFB57 /* VODListViewController.m in Sources */,
 				7FB956BD1C4ACBCF00BC6EAC /* NetworkManager.m in Sources */,
+				7F4874431C4B8E6A00DC3CEA /* NSImageView+AFNetworking.m in Sources */,
 				7F234B371C49F78A0086C471 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,26 +817,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4874291C4B68F000DC3CEA /* CommonRequestModel.m in Sources */,
 				7FB956701C4AAA2100BC6EAC /* MainWindowController.m in Sources */,
-				7FB956DE1C4ADAE400BC6EAC /* PostLoginRequest.m in Sources */,
+				7F4874651C4BC61F00DC3CEA /* UserManager.m in Sources */,
 				7FB956681C4AA9E200BC6EAC /* BaseWindowController.m in Sources */,
 				7FB9566C1C4AA9F700BC6EAC /* BaseViewController.m in Sources */,
+				7F4874541C4B97D200DC3CEA /* ChannelsResponseModel.m in Sources */,
+				7F48745E1C4BBF9F00DC3CEA /* DefaultsManagerUtil.m in Sources */,
 				7FB956A51C4AB1F000BC6EAC /* NSNavigationController.m in Sources */,
 				7FB956D81C4AD9F400BC6EAC /* LoginResponse.m in Sources */,
+				7F4874441C4B8E6A00DC3CEA /* NSImageView+AFNetworking.m in Sources */,
 				7F95A08B1C4A097B0027F3E8 /* LoginViewController.m in Sources */,
 				7FB956C91C4ACECA00BC6EAC /* BaseNetworkRequest.m in Sources */,
 				7F234B531C49F78A0086C471 /* SmartTvListingTests.m in Sources */,
 				7FB956DA1C4AD9F400BC6EAC /* LoginResponseModel.m in Sources */,
+				7F4874521C4B97D200DC3CEA /* ChannelsData.h.m in Sources */,
+				7F4874401C4B7CA200DC3CEA /* LiveChannelsCategoryTableCellView.m in Sources */,
 				7F6DDE751C4A27CC007CFB57 /* VODListViewController.m in Sources */,
+				7F4874591C4B9DC200DC3CEA /* VideoPlayerViewController.m in Sources */,
 				7FB956BE1C4ACBCF00BC6EAC /* NetworkManager.m in Sources */,
 				7FB956D41C4AD9F400BC6EAC /* LoginData.m in Sources */,
 				7F6DDE7C1C4A27DA007CFB57 /* EducationListViewController.m in Sources */,
 				7FB956D61C4AD9F400BC6EAC /* LoginRequestModel.m in Sources */,
+				7F4874341C4B739E00DC3CEA /* ChannelsCategoryData.m in Sources */,
+				7F48744C1C4B961E00DC3CEA /* LiveChannelsCategoriesViewController.m in Sources */,
 				7F6DDE831C4A27EC007CFB57 /* MyFavouritesListViewController.m in Sources */,
 				7FB956C71C4ACECA00BC6EAC /* BaseModel.m in Sources */,
 				7F6DDE891C4A281C007CFB57 /* MyRecordedShowsListViewController.m in Sources */,
 				7FB956AD1C4ABF5800BC6EAC /* StoryBoardUtil.m in Sources */,
+				7F48743B1C4B7A9100DC3CEA /* BaseTableCellView.m in Sources */,
+				7F4874361C4B739E00DC3CEA /* ChannelsCategoryResponseModel.m in Sources */,
 				7F6DDE701C4A27BA007CFB57 /* LiveChannelsListViewController.m in Sources */,
+				7F4874251C4B66D600DC3CEA /* WitribeCommomRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

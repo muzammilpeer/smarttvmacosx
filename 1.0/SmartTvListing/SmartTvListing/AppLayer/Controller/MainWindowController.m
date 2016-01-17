@@ -8,7 +8,7 @@
 
 #import "MainWindowController.h"
 #import "LoginViewController.h"
-#import "LiveChannelsListViewController.h"
+#import "LiveChannelsCategoriesViewController.h"
 
 @interface MainWindowController ()
 
@@ -20,9 +20,17 @@
     [super windowDidLoad];
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
-    LoginViewController *controller = GetStoryBoardAccordingToModule(@"Main", @"LoginViewController");
-    self.rootViewController = [[NSNavigationController alloc] initWithRootViewController:controller];
-    self.window.contentViewController = controller;
+    
+    if ([UserManager isUserLoggedIn]) {
+        LiveChannelsCategoriesViewController *controller = GetStoryBoardAccordingToModule(@"Main", @"LiveChannelsCategoriesViewController");
+        self.rootViewController = [[NSNavigationController alloc] initWithRootViewController:controller];
+    }else {
+        LoginViewController *controller = GetStoryBoardAccordingToModule(@"Main", @"LoginViewController");
+        self.rootViewController = [[NSNavigationController alloc] initWithRootViewController:controller];
+        
+    }
+
+    self.window.contentViewController = self.rootViewController.rootViewController;
 }
 
 - (void)makeWindowControllers {

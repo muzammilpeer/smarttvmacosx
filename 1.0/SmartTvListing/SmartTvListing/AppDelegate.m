@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +24,8 @@
     //launch window now
     self.mainWindowController = GetStoryBoardAccordingToModule(@"Main", @"MainWindowController");
     [self.mainWindowController showWindow:self];
+    
+
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -39,6 +42,18 @@
 }
 
 - (IBAction)actionLogout:(id)sender {
+    [DefaultsManagerUtil setUserDefaults:nil key:kDefaultKeyUserDetail];
+    
+    NSLog(@"NavigationStackCount = %lu",[self.mainWindowController.rootViewController.viewControllerStack count]);
+
+
+    
+    LoginViewController *controller = GetStoryBoardAccordingToModule(@"Main", @"LoginViewController");
+    [self.mainWindowController.rootViewController pushViewController:controller animated:YES];
+
+    if ([self.mainWindowController.rootViewController.viewControllerStack count] >=1) {
+        [self.mainWindowController.rootViewController.viewControllerStack removeObjectAtIndex:0];
+    }
 }
 - (IBAction)actionLiveChannels:(id)sender {
     

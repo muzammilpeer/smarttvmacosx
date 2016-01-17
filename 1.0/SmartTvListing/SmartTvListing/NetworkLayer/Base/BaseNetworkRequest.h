@@ -11,8 +11,11 @@
 
 @interface BaseNetworkRequest : NSObject <RequestProtocol>
 
-@property (nonatomic) NSInteger requestType;
-@property (nonatomic, strong) id localData;
+//public contructor
+- (instancetype)initWithModel: (id) model withRequestType:(NSInteger) requestType;
+
+- (NSInteger) getRequestType;
+- (id) getLocalData;
 
 - (NSString *) url;
 

@@ -14,6 +14,6 @@
 
 + (NetworkManager *) sharedInstance;
 
-- (void) executeRequest:(BaseNetworkRequest *)request withDelegate:(id<ResponseProtocol>)delegate requestType:(NSInteger)requestType;
+- (void) executeRequest:(BaseNetworkRequest *)request withDelegate:(id<ResponseProtocol>)delegate;
 
 @end
