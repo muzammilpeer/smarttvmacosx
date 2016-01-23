@@ -32,20 +32,72 @@
     //call abstractions methods
     [self setupViewController];
     
-    AppDelegate *appDelegate = (AppDelegate *)[NSApp delegate];
     
-    NSLog(@"Current Window Size = %@",NSStringFromRect(appDelegate.mainWindowController.window.frame));
-    NSLog(@"ViewController Window Size = %@",NSStringFromRect(self.view.frame));
-    
-    if (appDelegate.mainWindowController.window.frame.size.width > 0) {
-        [self.view setFrame:appDelegate.mainWindowController.window.frame];
-    }
-    
-//    appDelegate.mainWindowController.window.styleMask = NSClosableWindowMask | NSTitledWindowMask | NSMiniaturizableWindowMask | NSResizableWindowMask;
-
-//    [self.view setFrame:appDelegate.mainWindowController.window.frame];
 }
 
+- (void)viewDidAppear
+{
+    [super viewDidAppear];
+//    
+//    //resize windows frames
+//    CGRect screenRect = [[NSScreen mainScreen] frame];
+//    CGRect viewControllerRect = self.view.frame;
+//    screenRect.origin.x = 0;
+//    screenRect.origin.y = 0;
+//    
+//    viewControllerRect.size.width = 800;
+//    viewControllerRect.size.height = 600;
+//
+//    
+//    AppDelegate *appDelegate = (AppDelegate *)[NSApp delegate];
+//    CGRect windowRect = appDelegate.mainWindowController.window.frame;
+//    windowRect.origin.x = 0;
+//    windowRect.origin.y = -22;
+//
+//
+//    if ([self isFullScreenActive]) {
+//        [self.view setFrame:screenRect];
+//    }else {
+//        [self.view setFrame:windowRect];
+//    }
+//    
+//    NSLog(@"ScreenResolution current Size = %@",NSStringFromRect(screenRect));
+//    NSLog(@"Windows current Size = %@",NSStringFromRect(windowRect));
+    
+    CGRect screenRect = [[NSScreen mainScreen] frame];
+    screenRect.origin.x = 0;
+    screenRect.origin.y = 0;
+//    self.view.frame = screenRect;
+
+    NSLog(@"ViewController current Size = %@",NSStringFromRect(self.view.frame));
+    NSLog(@"=====================================================");
+//
+    
+
+}
+
+
+
+
+-(BOOL) isFullScreenActive
+{
+    AppDelegate *appDelegate = (AppDelegate *)[NSApp delegate];
+    CGRect windowRect = appDelegate.mainWindowController.window.frame;
+    //    CGRect windowRect = self.view.frame;
+
+    CGRect screenRect = [[NSScreen mainScreen] frame];
+    if (screenRect.size.width == windowRect.size.width && screenRect.size.height == windowRect.size.height) {
+        return YES;
+    }
+    return NO;
+}
+
+
+- (void)viewWillAppear
+{
+    [super viewWillAppear];
+    
+}
 
 //abstraction came here
 //abstraction called by setupViewController()

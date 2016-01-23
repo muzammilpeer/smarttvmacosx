@@ -41,15 +41,7 @@
         [self.lRecordCount setStringValue:@"55"];
         
         NSString *placeholder = @"AppIcon";
-        [self.ivRecordThumbnail setImage:[NSImage imageNamed:placeholder]];
-        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-        dispatch_async(queue, ^{
-            NSImage *downloadImage = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:currentModel.image]];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.ivRecordThumbnail setImage:downloadImage];
-            });
-        });
-//        NSLog(@"Data fetched = %@",[model dictionaryRepresentation]);
+        [self.ivRecordThumbnail setImageWithURL:[NSURL URLWithString:currentModel.image] placeholderImage:[NSImage imageNamed:placeholder]];
     }else if ([model isKindOfClass:[ChannelsData class]]) {
         ChannelsData *currentModel = (ChannelsData*)model;
         [self.lRecordID setStringValue:currentModel.dataIdentifier];
@@ -59,16 +51,7 @@
         
         NSString *placeholder = @"AppIcon";
         NSString *imageUrl = [NSString stringWithFormat:@"%@%@",@"http://pitelevision.com/",currentModel.mobileSmallImage];
-        
-        [self.ivRecordThumbnail setImage:[NSImage imageNamed:placeholder]];
-        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-        dispatch_async(queue, ^{
-            NSImage *downloadImage = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:imageUrl]];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.ivRecordThumbnail setImage:downloadImage];
-            });
-        });
-//        NSLog(@"Data fetched = %@",[model dictionaryRepresentation]);
+        [self.ivRecordThumbnail setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[NSImage imageNamed:placeholder]];
     }
     
 }

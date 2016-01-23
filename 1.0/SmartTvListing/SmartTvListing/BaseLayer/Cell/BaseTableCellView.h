@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "NSImageView+AFNetworking.h"
 
 @interface BaseTableCellView : NSTableCellView
 

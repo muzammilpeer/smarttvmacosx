@@ -9,6 +9,7 @@
 #ifndef MacrosHeader_h
 #define MacrosHeader_h
 #import "StringsManagerUtil.h"
+#import "ProcessIndicator.h"
 
 #define GetStoryBoardAccordingToModule(modulename,screenname) [StoryBoardUtil StoryBoardAccordingToModule:modulename withScreen:screenname]
 
@@ -18,5 +19,9 @@
 
 #define MERGE_STRING(a,b) [StringsManagerUtil mergeString:a withStringTwo:b]
 #define SPLIT_STRING(string,seperator) [StringsManagerUtil stringSplitedBy:string seperatedBy:seperator]
+
+
+#define SHOW_PROGRESS_LOADER(message) [[ProcessIndicator sharedInstance] showProcessIndicatorInView:PROCESS_INDICATOR_MSG]
+#define HIDE_PROGRESS_LOADER() [[ProcessIndicator sharedInstance] hideProcessIndicator]
 
 #endif /* MacrosHeader_h */

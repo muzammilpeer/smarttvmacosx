@@ -33,6 +33,11 @@
 }
 
 
+- (NSSize)windowWillResize:(NSWindow *)sender
+                    toSize:(NSSize)frameSize
+{
+    return NSMakeSize(1024, 768);
+}
 
 
 - (IBAction)actionUserProfile:(id)sender {
