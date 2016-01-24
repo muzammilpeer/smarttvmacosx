@@ -28,6 +28,8 @@
         self.lScreenTitle.stringValue = currentModel.title;
         
         NSString *streamingURL = MERGE_STRING(currentModel.videoIosStreamUrlLow, [UserManager getMergedLoggedInTokenID]);
+        streamingURL = [streamingURL stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+        
         NSURL *url = [NSURL URLWithString:streamingURL];
         AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:url];
         //                  [playerItem addObserver:self forKeyPath:@"status" options:0 context:&ItemStatusContext];
@@ -47,11 +49,13 @@
 
     if ([sender state] == NSOnState) {
         NSString *streamingURL = MERGE_STRING(currentModel.videoIosStreamUrl, [UserManager getMergedLoggedInTokenID]);
+        streamingURL = [streamingURL stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
         NSURL *url = [NSURL URLWithString:streamingURL];
         playerItem = [AVPlayerItem playerItemWithURL:url];
     }
     else {
         NSString *streamingURL = MERGE_STRING(currentModel.videoIosStreamUrlLow, [UserManager getMergedLoggedInTokenID]);
+        streamingURL = [streamingURL stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
         NSURL *url = [NSURL URLWithString:streamingURL];
         playerItem = [AVPlayerItem playerItemWithURL:url];
 

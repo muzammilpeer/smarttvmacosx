@@ -17,6 +17,7 @@
 @property (weak) IBOutlet NSButton *bBackView;
 
 @property (weak) IBOutlet NSTableView *tbChannelsCategories;
+@property (weak) IBOutlet NSTextField *lScreenTitle;
 @end
 
 @implementation LiveChannelsCategoriesViewController
@@ -32,6 +33,10 @@
     }
     cell_identifier_table = @"LiveChannelsCategoryTableCellViewIdentifier";
     [self postChannelsCategoriesRequest];
+    
+    [self.tbChannelsCategories setAllowsEmptySelection:YES];
+    [self.tbChannelsCategories setAllowsMultipleSelection:NO];
+    [self.tbChannelsCategories setAllowsTypeSelect:YES];
 }
 
 - (IBAction)actionBackPressed:(id)sender {
@@ -41,10 +46,16 @@
 }
 
 
-- (void)tableViewSelectionDidChange:(NSNotification *)aNotification
+- (BOOL)tableView:(NSTableView *)tableView shouldSelectRow:(NSInteger)row
 {
-    NSLog(@"Row selection = %ld",[[aNotification object] selectedRow]);
-    NSInteger selecedIndex = [[aNotification object] selectedRow];
+    return YES;
+}
+
+
+- (void)tableViewSelectionDidChange:(NSNotification *)notification
+{
+    [super tableViewSelectionDidChange:notification];
+    NSInteger selecedIndex = [[notification object] selectedRow];
     
     ChannelsCategoryData *selectedModel = [self.localDataSource objectAtIndex:selecedIndex];
     
@@ -55,10 +66,24 @@
 
     
 }
+- (void)tableViewSelectionIsChanging:(NSNotification *)notification
+{
+    [super tableViewSelectionIsChanging:notification];
+}
+
+- (BOOL)selectionShouldChangeInTableView:(NSTableView *)tableView
+{
+    return [super selectionShouldChangeInTableView:tableView];
+}
+
 
 - (void)postChannelsCategoriesRequest{
     
+    [self showProgressBar];
+    
     NSArray *parameters = [NSArray array];
+    
+    
     WitribeCommomRequest *request = [[WitribeCommomRequest alloc] initWithServiceName:@"NewWiTribeService" withMethodName:@"getChannelCategories" withParameters:parameters withEnum:kRequestTypeChannelsCategories];
     
     [[NetworkManager sharedInstance] executeRequest:request withDelegate:self];

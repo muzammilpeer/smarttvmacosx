@@ -41,7 +41,10 @@
         [self.lRecordCount setStringValue:@"55"];
         
         NSString *placeholder = @"AppIcon";
-        [self.ivRecordThumbnail setImageWithURL:[NSURL URLWithString:currentModel.image] placeholderImage:[NSImage imageNamed:placeholder]];
+        NSString *imageUrl = currentModel.image;
+        imageUrl = [imageUrl stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+
+        [self.ivRecordThumbnail setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[NSImage imageNamed:placeholder]];
     }else if ([model isKindOfClass:[ChannelsData class]]) {
         ChannelsData *currentModel = (ChannelsData*)model;
         [self.lRecordID setStringValue:currentModel.dataIdentifier];
@@ -51,6 +54,8 @@
         
         NSString *placeholder = @"AppIcon";
         NSString *imageUrl = [NSString stringWithFormat:@"%@%@",@"http://pitelevision.com/",currentModel.mobileSmallImage];
+        imageUrl = [imageUrl stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+        
         [self.ivRecordThumbnail setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[NSImage imageNamed:placeholder]];
     }
     

@@ -10,6 +10,7 @@
 #import "ResponseProtocol.h"
 #import "BaseTableCellView.h"
 
+#import "MBProgressHUD.h"
 
 @class NSNavigationController;
 
@@ -17,7 +18,8 @@
 {
 @protected NSString *cell_identifier_table;
 @protected NSString *cell_identifier_collection;
-
+    
+@protected MBProgressHUD *progressHud;
 }
 @property (nonatomic, weak) NSNavigationController *navigationController;
 
@@ -37,5 +39,9 @@
 - (void) initListeners; //4
 
 
+
+
+- (void) showProgressBar;
+- (void) hideProgressBar;
 
 @end

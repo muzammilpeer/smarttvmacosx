@@ -40,6 +40,7 @@
 }
 
 - (void)postLoginRequest{
+    [self showProgressBar];
     
     NSArray *parameters = [NSArray arrayWithObjects:@"muzammilpeer98744",@"pa5is8an", nil];
     WitribeCommomRequest *request = [[WitribeCommomRequest alloc] initWithServiceName:@"NewWiTribeService" withMethodName:@"loginWiTribeUser" withParameters:parameters withEnum:kRequestTypeLogin];

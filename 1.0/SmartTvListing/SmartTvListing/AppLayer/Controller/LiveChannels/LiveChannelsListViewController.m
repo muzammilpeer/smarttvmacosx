@@ -17,6 +17,7 @@
     ChannelsCategoryData* selectedModel;
 }
 @property (weak) IBOutlet NSTableView *tbChannelsCategories;
+@property (weak) IBOutlet NSTextField *lScreenTitle;
 @end
 
 @implementation LiveChannelsListViewController
@@ -25,8 +26,11 @@
     [super viewDidLoad];
     // Do view setup here.
     
+    
     if ([self.sharedData isKindOfClass:[ChannelsCategoryData class]]) {
         selectedModel = (ChannelsCategoryData*)self.sharedData;
+        
+       self.lScreenTitle.stringValue  = MERGE_STRING(@"Channel > ", selectedModel.name);
     }
     
     cell_identifier_table = @"LiveChannelsCategoryTableCellViewIdentifier";
@@ -54,6 +58,7 @@
 
 
 - (void)postChannelsCategoriesRequest{
+    [self showProgressBar];
     
     NSArray *parameters = [NSArray array];
     WitribeCommomRequest *request = [[WitribeCommomRequest alloc] initWithServiceName:@"NewWiTribeService" withMethodName:@"getAllChannels" withParameters:parameters withEnum:kRequestTypeChannelsCategories];

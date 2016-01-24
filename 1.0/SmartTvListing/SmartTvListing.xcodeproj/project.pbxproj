@@ -33,8 +33,6 @@
 		7F162AFC1C53358300937052 /* AFNSImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F162AF81C53358300937052 /* AFNSImageDownloader.m */; };
 		7F162B001C5340A000937052 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F162AFF1C5340A000937052 /* MBProgressHUD.m */; };
 		7F162B011C5340A000937052 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F162AFF1C5340A000937052 /* MBProgressHUD.m */; };
-		7F162B041C53435A00937052 /* ProcessIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F162B031C53435A00937052 /* ProcessIndicator.m */; };
-		7F162B051C53435A00937052 /* ProcessIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F162B031C53435A00937052 /* ProcessIndicator.m */; };
 		7F234B371C49F78A0086C471 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F234B361C49F78A0086C471 /* AppDelegate.m */; };
 		7F234B391C49F78A0086C471 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F234B381C49F78A0086C471 /* main.m */; };
 		7F234B3C1C49F78A0086C471 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F234B3B1C49F78A0086C471 /* ViewController.m */; };
@@ -151,8 +149,6 @@
 		7F162AF81C53358300937052 /* AFNSImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNSImageDownloader.m; sourceTree = "<group>"; };
 		7F162AFE1C5340A000937052 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7F162AFF1C5340A000937052 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		7F162B021C53435A00937052 /* ProcessIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessIndicator.h; sourceTree = "<group>"; };
-		7F162B031C53435A00937052 /* ProcessIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessIndicator.m; sourceTree = "<group>"; };
 		7F234B301C49F78A0086C471 /* SmartTvListing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTvListing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F234B341C49F78A0086C471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F234B351C49F78A0086C471 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -340,8 +336,6 @@
 		7F162AFD1C5340A000937052 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				7F162B021C53435A00937052 /* ProcessIndicator.h */,
-				7F162B031C53435A00937052 /* ProcessIndicator.m */,
 				7F162AFE1C5340A000937052 /* MBProgressHUD.h */,
 				7F162AFF1C5340A000937052 /* MBProgressHUD.m */,
 			);
@@ -928,7 +922,6 @@
 				7F6DDE821C4A27EC007CFB57 /* MyFavouritesListViewController.m in Sources */,
 				7FB956D91C4AD9F400BC6EAC /* LoginResponseModel.m in Sources */,
 				7F6DDE6F1C4A27BA007CFB57 /* LiveChannelsListViewController.m in Sources */,
-				7F162B041C53435A00937052 /* ProcessIndicator.m in Sources */,
 				7FB956671C4AA9E200BC6EAC /* BaseWindowController.m in Sources */,
 				7FB956A41C4AB1F000BC6EAC /* NSNavigationController.m in Sources */,
 				7F48743F1C4B7CA200DC3CEA /* LiveChannelsCategoryTableCellView.m in Sources */,
@@ -962,7 +955,6 @@
 				7FB9566C1C4AA9F700BC6EAC /* BaseViewController.m in Sources */,
 				7F162AE41C52ADCE00937052 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				7F4874541C4B97D200DC3CEA /* ChannelsResponseModel.m in Sources */,
-				7F162B051C53435A00937052 /* ProcessIndicator.m in Sources */,
 				7F48745E1C4BBF9F00DC3CEA /* DefaultsManagerUtil.m in Sources */,
 				7F162AF31C5331B200937052 /* NSImageView+AFNetworking.m in Sources */,
 				7F162AE81C52ADCE00937052 /* UIImageView+AFNetworking.m in Sources */,

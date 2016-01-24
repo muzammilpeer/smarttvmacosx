@@ -9,6 +9,10 @@
 #import "BaseViewController.h"
 #import "AppDelegate.h"
 @interface BaseViewController ()
+{
+AppDelegate *appDelegate;
+
+}
 
 @end
 
@@ -24,80 +28,53 @@
     return self;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do view setup here.
+- (void)viewWillAppear
+{
+    [super viewWillAppear];
     
-    
-    //call abstractions methods
-    [self setupViewController];
-    
-    
+    [appDelegate.mainWindowController.window setFrame:[[NSScreen mainScreen] frame] display:NO];
 }
 
 - (void)viewDidAppear
 {
     [super viewDidAppear];
-//    
-//    //resize windows frames
-//    CGRect screenRect = [[NSScreen mainScreen] frame];
-//    CGRect viewControllerRect = self.view.frame;
-//    screenRect.origin.x = 0;
-//    screenRect.origin.y = 0;
-//    
-//    viewControllerRect.size.width = 800;
-//    viewControllerRect.size.height = 600;
-//
-//    
-//    AppDelegate *appDelegate = (AppDelegate *)[NSApp delegate];
-//    CGRect windowRect = appDelegate.mainWindowController.window.frame;
-//    windowRect.origin.x = 0;
-//    windowRect.origin.y = -22;
-//
-//
-//    if ([self isFullScreenActive]) {
-//        [self.view setFrame:screenRect];
-//    }else {
-//        [self.view setFrame:windowRect];
-//    }
-//    
-//    NSLog(@"ScreenResolution current Size = %@",NSStringFromRect(screenRect));
-//    NSLog(@"Windows current Size = %@",NSStringFromRect(windowRect));
-    
-    CGRect screenRect = [[NSScreen mainScreen] frame];
-    screenRect.origin.x = 0;
-    screenRect.origin.y = 0;
-//    self.view.frame = screenRect;
-
-    NSLog(@"ViewController current Size = %@",NSStringFromRect(self.view.frame));
-    NSLog(@"=====================================================");
-//
-    
-
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do view setup here.
+    appDelegate = (AppDelegate *)[NSApp delegate];
+    [appDelegate.mainWindowController.window setFrame:[[NSScreen mainScreen] visibleFrame] display:NO];
 
 
+    //call abstractions methods
+    [self setupViewController];
+    
+    
+    [appDelegate.mainWindowController.window setBackgroundColor:RGBA(63,163,63,1.0)];
 
--(BOOL) isFullScreenActive
+    
+}
+
+- (void) showProgressBar
 {
-    AppDelegate *appDelegate = (AppDelegate *)[NSApp delegate];
-    CGRect windowRect = appDelegate.mainWindowController.window.frame;
-    //    CGRect windowRect = self.view.frame;
-
-    CGRect screenRect = [[NSScreen mainScreen] frame];
-    if (screenRect.size.width == windowRect.size.width && screenRect.size.height == windowRect.size.height) {
-        return YES;
-    }
-    return NO;
+    progressHud = [MBProgressHUD showHUDAddedTo:appDelegate.mainWindowController.contentViewController.view animated:NO];
+    progressHud.color = [NSColor blackColor];
+    progressHud.dimBackground = YES;
 }
-
-
-- (void)viewWillAppear
+- (void) hideProgressBar
 {
-    [super viewWillAppear];
-    
+    [progressHud hide:YES];
+    [MBProgressHUD hideHUDForView:appDelegate.mainWindowController.contentViewController.view animated:YES];
 }
+
+
+- (CGRect)getCurrentScreenResolution
+{
+    return [[NSScreen mainScreen] frame];
+}
+
+
 
 //abstraction came here
 //abstraction called by setupViewController()
@@ -174,6 +151,24 @@
 }
 
 
+
+- (void)tableViewSelectionDidChange:(NSNotification *)notification
+{
+    NSLog(@"base->tableViewSelectionDidChange Row selection = %ld",[[notification object] selectedRow]);
+}
+- (void)tableViewSelectionIsChanging:(NSNotification *)notification
+{
+    NSLog(@"base->tableViewSelectionIsChanging Row selection = %ld",[[notification object] selectedRow]);
+    
+}
+
+- (BOOL)selectionShouldChangeInTableView:(NSTableView *)tableView
+{
+    NSLog(@"base->selectionShouldChangeInTableView selectedRowIndexes = %@",tableView.selectedRowIndexes);
+    return YES;
+}
+
+
 //#pragma mark - UITableViewDelegate
 //
 //// Called after the user changes the selection.
@@ -219,11 +214,14 @@
 
 - (void)responseWithError:(NSError *)error andRequestType:(NSInteger)requestType
 {
+    [self hideProgressBar];
+
 //    NSLog(@"responseWithError = %@", [error description]);
 }
 
 - (void)successWithData:(id)data andRequestType:(NSInteger)requestType
 {
+    [self hideProgressBar];
 //    NSLog(@"successWithData = %@", data);
 }
 
